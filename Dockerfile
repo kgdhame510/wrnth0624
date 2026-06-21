@@ -13,6 +13,6 @@ RUN wget https://github.com/SagerNet/sing-box/releases/download/v1.13.13/sing-bo
 
 COPY config.json .
 
-EXPOSE 8080
+EXPOSE 8080 8081
 
 CMD ["./sing-box", "run", "-c", "config.json"]
